@@ -1,0 +1,66 @@
+/* 重设浏览器默认样式 */
+
+/* 通用样式 */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* 链接 */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+li{
+    list-style: none;
+}
+/* 图片 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 表格 */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* 表单 */
+input,
+button,
+textarea,
+select {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 0;
+}
