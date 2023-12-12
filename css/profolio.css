@@ -1,5 +1,39 @@
 @import url('base.css');
-.profolio_body {
+body {
   background-color: #e6dac2;
-  padding: 100px 200px 200px 200px;
+}
+.profolio_body {
+  padding: 100px 300px 300px 300px;
+  position: relative;
+}
+.profolio_body .menu {
+  position: absolute;
+  top: 138px;
+}
+.profolio_body header .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profolio_body header .title h4 {
+  width: 560px;
+  height: 2px;
+  background: #000;
+}
+.profolio_body main .con_item .img {
+  display: flex;
+  justify-content: space-between;
+}
+.profolio_body main .con_item .img img {
+  margin-bottom: 80px;
+}
+.profolio_body main .con_item .img .left {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.profolio_body main .con_item .img .right {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
 }
