@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10452206",
+      "name": "cha",
+      "font_class": "cha",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "11509209",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "23362344",
+      "name": "收藏",
+      "font_class": "shoucang1",
+      "unicode": "e523",
+      "unicode_decimal": 58659
+    }
+  ]
+}

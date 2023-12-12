@@ -14,10 +14,10 @@
         <header>
             <nav>
                 <ul class="nav_list">
-                    <li>About</li>
-                    <li>Profolio</li>
-                    <li>Work</li>
-                    <li>Contact</li>
+                    <li id="a"><a href="javascript:;">About</a></li>
+                    <li><a href="./profolio.html">Profolio</a></li>
+                    <li><a href="./work.html">Work</a></li>
+                    <li id="t"><a href="javascript:;">Contact</a></li>
                 </ul>
                 <ul class="hot">
                     <div class="item_img"><a href=""><img src="./img/hot.png" alt=""></a></div>
@@ -38,7 +38,7 @@
                 <div class="ava"><img src="./img/protriati_2-removebg.png" alt=""></div>
             </div>
         </header>
-        <main>
+        <main id="about">
             <div class="up">
                 <div class="left">
                     <h2>MY NAMEIS HALEYAM <br /> I A <span style="color:#63274b">MULTIPOTENTIALITY.</span></h2>
@@ -108,7 +108,7 @@
                 </div>
             </div>
         </main>
-        <footer>
+        <footer id="contact">
             <div class="left">
                 <img src="./img/haleysdfcs_a_cute_girl_good_smile_long_brown_hair_short_chin_pl_91b2eb7f-e33b-45ef-8df9-604cf0e9224d-removebg-preview.png"
                     alt="">
@@ -126,7 +126,21 @@
                 </div>
             </div>
         </footer>
+        <button id="top">go top</button>
     </div>
 </body>
+<script src="./js/jquery.js"></script>
+<script>
+    $('#a').click(function () {
+        scroll('#about')
+    })
+    $('#t').click(function () {
+        scroll('#contact')
+    })
+    function scroll(t) {
+        var distance = $(t).offset().top;
+        $('html, body').animate({ scrollTop: distance }, 'slow')
+    }
+</script>
 
 </html>

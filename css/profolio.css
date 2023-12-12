@@ -3,12 +3,61 @@ body {
   background-color: #e6dac2;
 }
 .profolio_body {
-  padding: 100px 300px 300px 300px;
+  padding: 100px 300px 200px 300px;
   position: relative;
 }
 .profolio_body .menu {
   position: absolute;
-  top: 138px;
+  top: 38px;
+  cursor: pointer;
+}
+.profolio_body .nav_black .up {
+  padding-top: 50px;
+  display: flex;
+}
+.profolio_body .nav_black .up .left ul li {
+  text-align: end;
+}
+.profolio_body .nav_black .dwon {
+  display: flex;
+  padding-top: 73px;
+}
+.profolio_body .nav_black .dwon .left .hot {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.profolio_body .nav_black .dwon .right ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.profolio_body .nav_black .foot {
+  text-align: end;
+}
+.profolio_body .nav_black .foot a {
+  color: #f2c1ba;
+  text-decoration: underline;
+}
+.profolio_body .nav_black ul li {
+  color: #6c5f5e;
+}
+.profolio_body .nav_black ul li a {
+  color: #f2c1ba !important;
+  text-decoration: underline;
+  text-align: end;
+}
+.profolio_body .nav_t {
+  background-color: #000;
+  padding: 100px 60px 60px 100px;
+  width: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 33;
+  display: none;
 }
 .profolio_body header .title {
   display: flex;
@@ -20,9 +69,33 @@ body {
   height: 2px;
   background: #000;
 }
+.profolio_body main .con_item {
+  padding-top: 88px;
+}
+.profolio_body main .con_item:first-child {
+  padding-top: unset;
+}
 .profolio_body main .con_item .img {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+.profolio_body main .con_item .img .i_img {
+  position: relative;
+}
+.profolio_body main .con_item .img .i_img .iconfont {
+  color: red;
+  font-size: 30px;
+  position: absolute;
+  right: 18%;
+  background: #fff;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+  top: 3%;
+  display: block;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 .profolio_body main .con_item .img img {
   margin-bottom: 80px;
@@ -30,10 +103,18 @@ body {
 .profolio_body main .con_item .img .left {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 45%;
 }
 .profolio_body main .con_item .img .right {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 45%;
+}
+.profolio_body footer {
+  text-align: end;
+  padding-top: 200px;
+  width: 110%;
+  text-decoration: underline;
 }

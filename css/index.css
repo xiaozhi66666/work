@@ -5,6 +5,12 @@
   padding-bottom: 300px;
   position: relative;
 }
+.introduction_home header a {
+  color: pink;
+}
+.introduction_home header a:hover {
+  text-decoration: none;
+}
 .introduction_home header nav {
   padding: 30px 200px 0 80px;
   display: flex;

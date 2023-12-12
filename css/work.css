@@ -1,0 +1,97 @@
+@import url('base.css');
+body {
+  background-color: #c3dde6;
+}
+.profolio_body {
+  padding: 100px 100px 100px 0px;
+  position: relative;
+}
+.profolio_body .menu {
+  position: absolute;
+  top: 38px;
+}
+.profolio_body .nav_t {
+  background-color: #000;
+  padding: 100px 60px 60px 100px;
+  width: 1000px;
+  position: absolute;
+  top: 0;
+  left: 350px;
+  z-index: 33;
+  display: none;
+}
+.profolio_body .nav_t .nav_black .up {
+  padding-top: 50px;
+  display: flex;
+}
+.profolio_body .nav_t .nav_black .up .left ul li {
+  text-align: end;
+}
+.profolio_body .nav_t .nav_black .dwon {
+  display: flex;
+  padding-top: 73px;
+}
+.profolio_body .nav_t .nav_black .dwon .left .hot {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.profolio_body .nav_t .nav_black .dwon .right ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.profolio_body .nav_t .nav_black .foot {
+  text-align: end;
+}
+.profolio_body .nav_t .nav_black .foot a {
+  color: #f2c1ba;
+  text-decoration: underline;
+}
+.profolio_body .nav_t .nav_black ul li {
+  color: #6c5f5e;
+}
+.profolio_body .nav_t .nav_black ul li a {
+  color: #f2c1ba !important;
+  text-decoration: underline;
+  text-align: end;
+}
+.profolio_body header .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profolio_body header .title h4 {
+  width: 560px;
+  height: 2px;
+  background: #000;
+}
+.profolio_body main .conten_container {
+  margin-top: 100px;
+}
+.profolio_body main .conten_container .item {
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.profolio_body main .conten_container .item:last-child {
+  margin-bottom: unset;
+}
+.profolio_body main .conten_container .item p {
+  font-weight: 600;
+}
+.profolio_body main .conten_container .item .left {
+  padding-left: 150px;
+  width: 700px;
+  line-height: 35px;
+}
+.profolio_body main .conten_container .item .right img {
+  width: 660px;
+}
+.profolio_body footer {
+  text-align: end;
+  padding-top: 200px;
+  text-decoration: underline;
+}
