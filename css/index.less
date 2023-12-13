@@ -6,13 +6,16 @@
         color: pink;
         padding-bottom: 300px;
         position: relative;
-        a{
-        color: pink;
-        &:hover{
-            text-decoration: none;
-        }
+
+        a {
+            color: pink;
+
+            &:hover {
+                text-decoration: none;
+            }
 
         }
+
         nav {
             padding: 30px 200px 0 80px;
             display: flex;
@@ -54,8 +57,8 @@
                 align-items: center;
 
             }
-            
-           
+
+
 
             .ava {
                 position: absolute;
@@ -72,36 +75,42 @@
 
 
     }
-    main{
-        .up{
+
+    main {
+        .up {
             padding: 100px 80px;
             background-color: #f2c1ba;
             display: flex;
             align-items: center;
-        padding-top: 0;
-            
-        .left{
-            width: 400px;
+            padding-top: 0;
+
+            .left {
+                width: 400px;
+            }
         }
-        }
-        .dwon{
+
+        .dwon {
             padding: 100px 80px;
             background-color: #000;
-            .box_item{
+
+            .box_item {
                 display: flex;
                 justify-content: space-between;
                 color: #fff;
                 margin-top: 200px;
-                .left{
+
+                .left {
                     width: 400px;
                     line-height: 28px;
                     font-size: 22px;
                     line-height: 52px;
-                    h2{
-                         color: #e6dac2;
+
+                    h2 {
+                        color: #e6dac2;
                     }
                 }
-                .right{
+
+                .right {
                     background-image: url('../img/profolio页面/图片.png');
                     width: 648px;
                     background-repeat: no-repeat;
@@ -109,54 +118,82 @@
                     justify-content: center;
                     text-align: center;
                     padding-top: 7%;
-                    .txt{
+
+                    .txt {
                         // position: absolute;
                         // left: 42%;
                         // top: 20%;
                         font-weight: 700;
                         font-size: 20px;
                         color: #e6dac2;
-                        button{
-                            padding: 10px 20px;
+
+                        button {
+                            // padding: 10px 20px;
                             border: unset;
                         }
                     }
                 }
-                .right_1{
+
+                .right_1 {
                     background-image: url('../img/work-page 工作页/图片 (1).png');
                 }
             }
         }
     }
-    footer{
+
+    footer {
         display: flex;
-        padding:400px 80px 0 0;
+        padding: 400px 80px 0 0;
         background-color: #f2c1ba;
-        .right{
+
+        .right {
             position: relative;
             padding-left: 100px;
-            .content{
+
+            .content {
                 position: absolute;
                 top: -60px;
-                h2{
+
+                h2 {
                     width: 587px;
-                        font-weight: 800;
+                    font-weight: 800;
                 }
-                p{
+
+                p {
                     width: 424px;
                 }
-                    button{
-                      padding: 10px 20px;
-                      border: unset;
+
+                .btn_h {
+                    //   padding: 10px 20px;
+
+                    a {
+                        display: block;
+                        height: 40px;
+                        width: 175px;
+                        line-height: 40px;
                     }
+
+                    border: unset;
+                }
             }
         }
     }
-    .btn_h{
-        &:hover{
+
+    .btn_h {
+        a {
+            display: block;
+            height: 40px;
+            width: 175px;
+            line-height: 40px;
+        }
+
+        &:hover {
             background-color: #673553;
-            color: #fff;
             cursor: pointer;
+            a{
+                color: #fff;
+
+            }
         }
     }
 

@@ -98,7 +98,6 @@
   color: #e6dac2;
 }
 .introduction_home main .dwon .box_item .right .txt button {
-  padding: 10px 20px;
   border: unset;
 }
 .introduction_home main .dwon .box_item .right_1 {
@@ -124,12 +123,25 @@
 .introduction_home footer .right .content p {
   width: 424px;
 }
-.introduction_home footer .right .content button {
-  padding: 10px 20px;
+.introduction_home footer .right .content .btn_h {
   border: unset;
+}
+.introduction_home footer .right .content .btn_h a {
+  display: block;
+  height: 40px;
+  width: 175px;
+  line-height: 40px;
+}
+.introduction_home .btn_h a {
+  display: block;
+  height: 40px;
+  width: 175px;
+  line-height: 40px;
 }
 .introduction_home .btn_h:hover {
   background-color: #673553;
-  color: #fff;
   cursor: pointer;
+}
+.introduction_home .btn_h:hover a {
+  color: #fff;
 }
