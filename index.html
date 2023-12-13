@@ -14,10 +14,10 @@
         <header>
             <nav>
                 <ul class="nav_list">
-                    <li id="a"><a href="javascript:;">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="./profolio.html">Profolio</a></li>
                     <li><a href="./work.html">Work</a></li>
-                    <li id="t"><a href="javascript:;">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <ul class="hot">
                     <div class="item_img"><a
@@ -33,8 +33,7 @@
                 <p>
                     <marquee class="title" behavior="" direction="" scrolldelay="10" scroamount="10">
                         <p>
-                            Hi,I'm HalaHala
-                            Hala Hala
+                            Hi,I'm Haley Xu.
                         </p>
                     </marquee>
                 </p>
@@ -132,18 +131,6 @@
         </footer>
     </div>
 </body>
-<script src="./js/jquery.js"></script>
-<script>
-    $('#a').click(function () {
-        scroll('#about')
-    })
-    $('#t').click(function () {
-        scroll('#contact')
-    })
-    function scroll(t) {
-        var distance = $(t).offset().top;
-        $('html, body').animate({ scrollTop: distance }, 'slow')
-    }
-</script>
+
 
 </html>

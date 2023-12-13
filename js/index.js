@@ -1,36 +1,37 @@
 window.onload = function () {
     // open
-    console.log($('#menu'));
-    $('#menu').click(function () {
-        console.log(123123);
-        $('#nav_t').slideDown()
-        // $('#nav_t').animate({ left: 0 },);
-        // $("#nav_t").animate({ left: '10px' });
-    })
-    $('#cancel').click(function () {
-        $('#nav_t').slideUp()
-    })
     var isCorrect = false
-    $(".icon-shoucang1").css("color", "#ccc");
-    $(".icon-shoucang1").css("cursor", "pointer");
-    $(".icon-shoucang1").each(function () {
-        $(this).click(function () {
+    var menuBtn = document.getElementById('menu')
+    console.log(menuBtn);
+    dialogMenu = document.getElementById('nav_t')
+    closeBtn = document.getElementById('cancel')
+    scList = document.querySelectorAll('.icon-shoucang1')
+    menuBtn.onclick = function () {
+        dialogMenu.style.display = 'block'
+    }
+    closeBtn.onclick = function () {
+        dialogMenu.style.display = 'none'
+    }
+    scList.forEach(i => {
+        i.style.color = '#ccc'
+        i.style.cursor = 'pointer'
+        i.onclick = function () {
             isCorrect = !isCorrect
+            var color = this.style.color
             if (isCorrect) {
-                var c1 = $(this).css('color')
-                if (c1 == 'rgb(255, 0, 0)') {
-                    $(this).css("color", "#ccc");
+                if (color === 'rgb(204, 204, 204)') {
+                    this.style.color = 'red'
                 } else {
-                    $(this).css("color", "red");
+                    this.style.color = '#ccc'
                 }
             } else {
-                var color = $(this).css('color')
-                if (color == 'rgb(204, 204, 204)') {
-                    $(this).css("color", "red");
+                if (color === 'rgb(204, 204, 204)') {
+                    this.style.color = 'red'
                 } else {
-                    $(this).css("color", "#ccc");
+                    this.style.color = '#ccc'
                 }
             }
-        });
-    });
+        }
+    })
+
 }
